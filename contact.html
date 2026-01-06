@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="intro.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <style>
+        /* Custom Styles for Contact Section */
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 0;
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-item {
+            width: 300px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-10px);
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .contact-item i {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #ffcc00;
+        }
+
+        .contact-item h4 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .contact-item p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .contact-item a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">Logo.</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html" style="--navAni:1">Home</a></li>
+                <li><a href="about.html" style="--navAni:2">About Me</a></li>
+                <li><a href="skills.html" style="--navAni:3">Skills</a></li>
+                <li><a href="project.html" style="--navAni:4">Project</a></li>
+                <li><a href="contact.html" class="active" style="--navAni:2">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-item">
+            <i class='bx bx-phone'></i>
+            <h4>+60 18 460 3163</h4>
+            <p>Reach out via call or text. I’m happy to chat anytime!</p>
+        </div>
+
+        <div class="contact-item">
+            <i class='bx bx-envelope'></i>
+            <h4><a href="mailto:nuranisah0258@gmail.com">nuranisah0258@gmail.com</a></h4>
+            <p>For inquiries or collaborations, feel free to email me.</p>
+        </div>
+
+        <div class="contact-item">
+            <i class='bx bxl-linkedin'></i>
+            <h4><a href="https://www.linkedin.com/in/nur-anisah-646821339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></h4>
+            <p>Let's connect on LinkedIn. I’d love to network with you!</p>
+        </div>
+
+        <div class="contact-item">
+            <i class='bx bxl-instagram'></i>
+            <h4><a href="https://instagram.com/nur.nissaaa">Instagram</a></h4>
+            <p>Follow me for updates, projects, and inspiration!</p>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/linecons/1.0.0/linecons.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Project</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <style>
+        .website-showcase {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .website-title {
+            font-size: 3rem;
+            color: #3498db;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        .website-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            padding: 0 1.5rem;
+        }
+
+        .project-video,
+        .website-image {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .website-description {
+            font-size: 1.1rem;
+            color: #34495e;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .challenges-solutions {
+            background: #e74c3c;
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .challenges-solutions h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .challenges-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .challenge-solution {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .challenge-solution h3 {
+            color: #3498db;
+        }
+
+        .challenge-solution p {
+            color: #34495e;
+        }
+
+        @media (max-width: 768px) {
+            .website-title {
+                font-size: 2rem;
+            }
+
+            .project-video,
+            .website-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">Logo.</a>
+            </div>
+
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <i class='bx bx-menu'></i>
+            </label>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="project.html" class="active">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <!-- USER LOGIN SYSTEM -->
+    <section class="website-showcase">
+        <h2 class="website-title">User Login System Demo</h2>
+
+        <div class="website-container">
+            <video class="project-video" controls>
+                <source src="Video/UserLogin.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <img class="website-image" src="img/codingweb.jpg" alt="Coding Example">
+
+            <p class="website-description">
+                This video demonstrates the User Login system I developed, including user authentication,
+                interface interaction, and form validation.
+            </p>
+        </div>
+    </section>
+
+    <!-- CHALLENGES & SOLUTIONS -->
+    <section class="challenges-solutions">
+        <h2>Challenges & Solutions</h2>
+
+        <div class="challenges-container">
+            <div class="challenge-solution">
+                <h3>Challenge: Secure user authentication</h3>
+                <p><strong>Solution:</strong> Implemented validation logic and controlled user input to ensure secure access.</p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Responsive design</h3>
+                <p><strong>Solution:</strong> Used Flexbox and media queries to support all screen sizes.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- ✅ PAST YEAR PROJECT (NEW SECTION) -->
+<section class="website-showcase">
+    <h2 class="website-title">Past Year Project</h2>
+
+    <div class="website-container">
+        <div class="project-link-box">
+            <video width="640" height="360" controls>
+                <source src="Video/PastYearProjectD.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <p class="website-description">
+            This section showcases one of my past year projects, demonstrating my earlier experience
+            in web development and design.
+        </p>
+    </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
