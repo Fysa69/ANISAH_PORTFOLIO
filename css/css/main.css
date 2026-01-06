@@ -2,16 +2,10 @@
 @import 'fonts/linear-icons-font/style.css';
 @import 'fonts/fontawesome-free-5.12.1-web/css/all.min.css';
 @import 'fonts/linecons/style.css';
+/* Added CDN for latest Font Awesome icons */
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
-/* At the bottom of main.css, add this: */
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* ----------------- Skills Section Responsive Fix ----------------- */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -35,26 +29,15 @@
     .skills-category {
         flex: 1 1 100%;
     }
-
-    .main h2 {
-        font-size: 1.5rem;
-    }
-
-    .skills-category h3 {
-        font-size: 1.2rem;
-    }
-
-    .skills-category ul li {
-        font-size: 0.95rem;
-    }
 }
 
+/* ----------------- General Page Fixes ----------------- */
 html {
     position: relative;
     height: 100%;
     min-height: 100%;
     width: 100%;
-    overflow: hidden
+    overflow: auto; /* changed from hidden to auto so content is scrollable on mobile */
 }
 
 body {
@@ -72,7 +55,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
     overflow-y: auto;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .lm-animated-bg {
@@ -87,7 +70,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1
+    z-index: -1;
 }
 
 .page-scroll {
@@ -95,35 +78,14 @@ body {
     height: auto;
     min-height: 100%;
     vertical-align: middle;
-    -ms-flex-pack: center;
-    justify-content: center;
-    flex-direction: column;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-align-content: stretch;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -webkit-align-items: center;
+    justify-content: center;
     align-items: center;
-    -ms-flex-align: center;
+    align-content: stretch;
     -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden
+    backface-visibility: hidden;
 }
 
 .add-prespective {
@@ -5669,3 +5631,4 @@ a.post-thumbnail:hover {
     }
 
 }
+
