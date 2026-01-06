@@ -3,6 +3,52 @@
 @import 'fonts/fontawesome-free-5.12.1-web/css/all.min.css';
 @import 'fonts/linecons/style.css';
 
+/* At the bottom of main.css, add this: */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skills-category {
+    flex: 1 1 45%;
+}
+
+.nested-list {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-category {
+        flex: 1 1 100%;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills-category h3 {
+        font-size: 1.2rem;
+    }
+
+    .skills-category ul li {
+        font-size: 0.95rem;
+    }
+}
+
 html {
     position: relative;
     height: 100%;
@@ -5621,4 +5667,5 @@ a.post-thumbnail:hover {
         margin-right: -70px;
         z-index: 1
     }
+
 }
